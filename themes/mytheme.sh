@@ -23,8 +23,8 @@ TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SE
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
   TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
-    "tmux_session_info 166 235" \
-    "hostname 235 166" \
+    "tmux_session_info 136 235" \
+    "hostname 235 136" \
     #"ifstat 235 240" \
     #"ifstat_sys 235 240" \
     #"lan_ip 235 240 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
@@ -43,7 +43,7 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
     #"pwd 89 211" \
     #"mailcount 9 255" \
     #"now_playing 234 37" \
-    "cpu 240 136" \
+    #"cpu 240 136" \
     #"load 237 167" \
     #"tmux_mem_cpu_load 234 136" \
   # "battery 137 127" \
@@ -52,8 +52,8 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
     #"xkb_layout 125 117" \
     #"date_day 235 136" \
     #"date 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-    "time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
+    "time 136 235" \
     #"utc_time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-    "hostname 33 0" \
+    "hostname 235 136" \
   )
 fi
