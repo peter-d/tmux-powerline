@@ -61,17 +61,17 @@ __parse_svn_branch() {
 		return
 	fi
 
-	local svn_info=$(svn info 2>/dev/null)
-	if [ -z "${svn_info}" ]; then
-		return
-	fi
-
-
-	local svn_root=$(echo "${svn_info}" | sed -ne 's#^Repository Root: ##p')
-	local svn_url=$(echo "${svn_info}" | sed -ne 's#^URL: ##p')
-
-	local branch=$(echo "${svn_url}" | egrep -o '[^/]+$')
-	echo "#[fg=colour${svn_colour}]${branch_symbol} #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch}"
+#	local svn_info=$(svn info 2>/dev/null)
+#	if [ -z "${svn_info}" ]; then
+#		return
+#	fi
+#
+#
+#	local svn_root=$(echo "${svn_info}" | sed -ne 's#^Repository Root: ##p')
+#	local svn_url=$(echo "${svn_info}" | sed -ne 's#^URL: ##p')
+#
+#	local branch=$(echo "${svn_url}" | egrep -o '[^/]+$')
+#	echo "#[fg=colour${svn_colour}]${branch_symbol} #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch}"
 }
 
 __parse_hg_branch() {
