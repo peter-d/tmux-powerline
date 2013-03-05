@@ -143,7 +143,7 @@ __get_condition_symbol() {
     "dust" | "foggy" | "fog" | "haze" | "smoky" | "blustery" | "mist")
       #echo "♨"
       #echo "﹌"
-      echo "〰"
+      echo "●"
       ;;
     "windy" | "fair/windy")
       #echo "⚐"
@@ -154,7 +154,7 @@ __get_condition_symbol() {
       if [ "$hourmin" -ge "$sunset" -o "$hourmin" -le "$sunrise" ]; then
         echo "☾"
       else
-        echo "〇"
+        echo "○"
       fi
       ;;
     *)
